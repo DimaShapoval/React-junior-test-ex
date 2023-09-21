@@ -1,0 +1,105 @@
+.wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.secondWrapper{
+    width: 40%;
+    height: auto;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+.secondWrapper h1{
+    display: flex;
+    width: 90%;
+}
+.listItem{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ced4da;
+    background-color: #FFF;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+.listItem.activeItem{
+    border-left: 4px solid rgb(255, 0, 191);
+}
+.rightSide{
+    width: auto;
+    align-items: center;
+    display: flex;
+
+}
+.nav{
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #ced4da;
+    background-color: #FFF;
+    border-radius: 5px;
+    display: flex;
+}
+.colorWrapper{
+    height: 40px;
+    width: 40px;
+
+}
+.colorWrapper{
+    margin-right: 20px;
+}
+.formItem{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    width: 90%;
+}
+.formItem button{
+    margin-left: 10px;
+    background-color: #17a2b8;
+    color: #FFF;
+    border: none;
+    width: 20%;
+    border-radius: 10px;
+}
+.formItem input[type="color"]{
+    width: 50px;
+    height: 50px;
+}
+.formItem textarea{
+    width: 50%;
+    padding: 10px;
+}
+.formItem .rightSide button{
+    width: auto;
+    padding: 10px 15px;
+    background-color: transparent;
+    color: red;
+    border: 1px solid red;
+    z-index: 99999;
+}
+
+.formItem .rightSide button:hover{
+    background-color: red;
+    color: #FFF;
+    transition: color .15s ease-in;
+}
+.secondWrapper ul{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    list-style-type: none;
+}
+@media screen and (max-width: 700px) {
+    .secondWrapper{
+        width: 80%;
+    }
+}
